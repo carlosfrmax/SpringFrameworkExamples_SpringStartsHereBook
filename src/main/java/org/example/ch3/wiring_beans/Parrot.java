@@ -1,6 +1,6 @@
-package org.example.ch2.defining_beans;
+package org.example.ch3.wiring_beans;
 
-public class Cat {
+public class Parrot {
     private String name;
 
     public String getName() {
@@ -9,5 +9,10 @@ public class Cat {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Parrot [name=" + name + "]";
     }
 }
